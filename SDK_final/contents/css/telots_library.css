@@ -1,0 +1,188 @@
+
+/*Library Component id #0002; Author: Divyanshu Pandey; Mentors: Shitanshu Mishra, Prajish Prashad, Kavya Alse; release date: 14-JULY-2017
+*//************************************************************* Starts *********************************************************************
+
+/*The DialogBox */
+
+.dialogbox_button {
+    padding-left: 25px;
+    padding-top: 25px;
+}
+
+.dialogBox {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+
+}
+
+/*DialogBox Content */
+.dialogBox-content {
+    position: relative; 
+    background-size: 100%;
+    margin: auto;
+    width: 45%;
+    height: 320px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5),0 9px 25px 0 rgba(0,0,0,0.4);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.6s;
+    animation-name: animatetop;
+    animation-duration: 0.6s;
+}
+
+/*DialogBox Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/*DialogBox Content */
+.dialogBox-body {
+    padding-left: 10px;   /* Location of the content */
+    padding-top: 10px;    /* Location of the content */
+    color: white;         /* Text Color */
+    position: relative;   /* Content position are relative to its current position */
+}
+
+/*DialogBox Image */
+div.dialogBox-image {
+    position: relative;    /* Image position is relative to its current position */
+    padding: 20px;         /* Location of the image */
+    max-width:200px;       /* Upper limit - Width of image */
+    max-height:300px;      /* Upper limit - Height of image */
+    border: none;
+    box-shadow: none;
+    float:left;            /* position of image */
+}
+
+/*DialogBox Submit-Button */
+input[type=button] {
+
+    padding:5px;
+    padding-left:30px;     
+    padding-right:30px;    
+    background-color: transparent;    
+    color: white;                   /* Text Color */
+    margin-right: 20px;
+    position: absolute; 
+    bottom:20px;
+    right:5px;
+}
+
+/*DialogBox-Button after Hover */
+input[type=button]:hover {
+
+    background-color: grey;  
+    cursor: pointer;
+}
+
+
+/*Library Component id #0003; Author: Divyanshu Pandey; Mentors: Shitanshu Mishra, Prajish Prashad, Kavya Alse; release date: 14-JULY-2017
+*//************************************************************* Starts *********************************************************************/
+
+/*Question Posing components*/
+
+.QuestionPosing_Body {
+    display: flex;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.QuestionPosingBox{
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.QuestionPosing_textbox{
+    width: 550px; 
+    height: 150px;
+}
+.questionPosingFrame{
+    width: 680px;
+    height: 430px;
+    border: outset;
+}
+.QuestionPosingBox_Text2{
+    padding-top: 8px;
+}
+/*Submit button*/
+.questionPosing_Submit{
+    margin-top: 10px;
+}
+/*Question log button(Submitted questions)*/
+.submittedQuestions_Button{
+    color: white;
+    border: none;
+    background-color: #88c3f5;
+    float: right;
+    margin-top: 50px;
+    margin-right: -60px;
+    padding-left: 10px;
+    width: 240px;
+    height: 60px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+/* QuestionSubmitted Modal (background) */
+.QuestionSubmitted_modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+}
+
+/* QuestionSubmitted Modal Content */
+.QuestionSubmittedModal-content {
+    position: relative; 
+    background-size: 100%;
+    background-color: white;
+    margin: auto;
+    width: 45%;
+    height: 320px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5),0 9px 25px 0 rgba(0,0,0,0.4);
+    -webkit-animation-name: animatetop_QuestionSubmitted;
+    -webkit-animation-duration: 0.7s;
+    animation-name: animatetop_QuestionSubmitted;
+    animation-duration: 0.7s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop_QuestionSubmitted {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop_QuestionSubmitted {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* QuestionSubmitted Modal Body */      
+.QuestionSubmittedModal-body{
+    overflow-y: auto;
+    height: 320px;
+}
+
+
+
+

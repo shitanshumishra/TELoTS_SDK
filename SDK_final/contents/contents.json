@@ -1,0 +1,91 @@
+{"questionPrompt":
+	{
+		"LecId1": 
+			{
+
+				"question_stem":"What do you think industries look for, in fresh candidates??",
+				"options": ["They look only for concept knowledge.","They look only for concept knowledge.","They look mostly for concept knowledge; thinking ability (such as mental aptitude, algorithmic thinking, trouble shooting, etc.) is not important.","They look for both concept knowledge and thinking ability."],
+				"val": ["0","0","0","1"],
+				"msg": ["Try Again","Try Again","Try Again","In addition to concept knowledge industries typically select the fresh candidates who demonstrate better thinking skills."],
+				"choice_id" : "choice"
+			},
+
+
+
+		
+
+		"LecId2": 
+			{
+
+				"question_stem":" industries look for, in fresh candidates??",
+				"options": ["They look only for concept knowledge.","They look mostly for concept knowledge; thinking ability (such as mental aptitude, algorithmic thinking, trouble shooting, etc.) is not important.","They look for both concept knowledge and thinking ability."],
+				"val": ["3","4","2"],
+				"msg": ["Try Again","Try Again","In addition to concept knowledge industries typically select the fresh candidates who demonstrate better thinking skills."],
+				"choice_id" : "choice1"
+			}
+
+
+
+		
+	},
+
+
+
+	"dialogBox":
+	{
+		"LecId1": 
+			{
+
+				"dialogbox_Text":"<h3>Your Task :</h3><p>Watch the video to understand the topic.</p><h3>Important : </h3><p>The moment you feel any question, click on the questioning box, type and submit the question. When you finish watching, you can submit additional questions.</p>",
+				"dialogbox_Background": "blackboard.jpg",
+				"dialogbox_Image": "instruction.png",
+				"dialogbox_ButtonText": "OK"
+			},
+
+
+		"LecId2": 
+			{
+
+				"dialogbox_Text":"<h3>Your Task :</h3><p>Watch the video to understand the topic.</p>",
+				"dialogbox_Background": "colors.png",
+				"dialogbox_Image": "harry.jpg",
+				"dialogbox_ButtonText": "OK"
+			},
+
+
+		"LecId3": 
+			{
+
+				"dialogbox_Text":"<h3>Your Task :</h3><p>Watch the video to understand the topic.</p>",
+				"dialogbox_Background": "back.jpg",
+				"dialogbox_Image": "scooby.jpg",
+				"dialogbox_ButtonText": "OK"
+			}		
+
+
+
+
+		
+	},
+
+
+
+	"questionPosing":
+	{
+		"LecId1": 
+			{
+
+				"questionPosingSituation_Link":"//www.slideshare.net/slideshow/embed_code/key/B6SfqHFrWhihpr",
+				"questionPosingBox_Text1": "<p>Based on the content of the video<strong ><u> pose questions which you think are exploratory.</u></strong><br></p><ul ><li><strong>Important: </strong>The moment you feel any question, type and submit it.</span></li></ul>",
+				"questionPosingBox_Placeholder": "Write your question here. (Submit only one question at a time)",
+				"questionPosingBox_Text2": "<p><strong> Note:</strong> Submit only one question at a time</p>"
+			}
+
+		
+	}
+}
+
+
+
+
+
