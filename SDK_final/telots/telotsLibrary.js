@@ -1,5 +1,10 @@
 //renderLEC is the main class which the library user will call in HTML code, the function of this class is to call an object of another class according to the LEC type provided by the user, it also recieves the parameters given by the user i.e lecType, LecId, DivId. 
 class renderLEC {
+  /* lecType is the type of learning environment component. Ex: Dialog box, MCQ etc
+  LecId is the identifier of the content in the JSON file.
+  DivId is the identifier of <div> in HTML where the LEC has to be rendered.
+  */
+  
   constructor(lecType, LecId, DivId)
   {
     switch(lecType)
