@@ -1,7 +1,7 @@
 //renderLEC is the main class which the library user will call in HTML code, the function of this class is to call an object of another class according to the LEC type provided by the user, it also recieves the parameters given by the user i.e lecType, LecId, DivId. 
 class renderLEC {
   /* lecType is the type of learning environment component. Ex: Dialog box, MCQ etc
-  LecId is the identifier of the content in the JSON file.
+  LecId is the identifier of data in the JSON file.
   DivId is the identifier of <div> in HTML where the LEC has to be rendered.
   */
   
@@ -38,7 +38,7 @@ class renderLECQuestionPrompt {
     this.readJSONQuestionPrompt();
   }
 
-  //read json data corresponding to lecType and LecId, stores the fetched data in variable JSONDataSetObjQuestionPrompt, then pass the value of JSONDataSetObjQuestionPrompt by calling the function 'afterJSONLoadedQuestionPrompt' of class JSONDataSetQuestionPrompt.
+  //read json data corresponding to lecType and LecId, stores the fetched data in variable JSONDataSetObjQuestionPrompt, then pass the value of JSONDataSetObjQuestionPrompt by calling the function 'afterJSONLoadedQuestionPrompt' of class JSONDataSetQuestionPrompt
   readJSONQuestionPrompt()
   {
     var lecType=this.lectype;
@@ -59,7 +59,8 @@ class renderLECQuestionPrompt {
 
            // this.qpObj.text();
            JSONDataSetObjQuestionPrompt.afterJSONLoadedQuestionPrompt(JSONDataSetObjQuestionPrompt,divId);
-      }          
+      }  
+      //Only successful retrieval of file is handled right now. Error cases need to be handled.
     };
 
        xmlhttp.open("GET", "contents/contents.json", true);
